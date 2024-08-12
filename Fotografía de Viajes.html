@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotografía de Viajes Chimba</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #FF6B6B;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-transform: uppercase;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 2em;
+        }
+        .photo {
+            margin: 1em;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .photo:hover {
+            transform: scale(1.05);
+        }
+        .photo img {
+            display: block;
+        }
+        .photo1 img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .photo2 img {
+            width: 250px;
+            height: 250px;
+            object-fit: contain;
+            object-position: center;
+        }
+        .photo3 img {
+            width: 400px;
+            height: 300px;
+            object-fit: none;
+            object-position: left top;
+        }
+        .photo4 img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: bottom;
+        }
+        .caption {
+            padding: 0.5em;
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fotografía de Viajes Chimba</h1>
+    </header>
+    <div class="gallery">
+        <div class="photo photo1">
+            <img src="imagen2.jfif" alt="Playa tropical">
+            <div class="caption">Paraíso tropical</div>
+        </div>
+        <div class="photo photo2">
+            <img src="imagen3.jfif" alt="Montañas nevadas">
+            <div class="caption">Cumbres nevadas</div>
+        </div>
+        <div class="photo photo3">
+            <img src="images1.jfif" alt="Ciudad cosmopolita">
+            <div class="caption">Luces de la ciudad</div>
+        </div>
+        <div class="photo photo4">
+            <img src="images4.jfif" alt="Desierto al atardecer">
+            <div class="caption">Atardecer en el desierto</div>
+        </div>
+    </div>
+</body>
+</html>

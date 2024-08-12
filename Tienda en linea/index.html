@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#cart">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Section 1: Home page -->
+        <section id="home">
+            <h1>Bienvenidos a nuestra tienda online!</h1>
+            <p>Encuentra los mejores productos aquí.</p>
+            <a href="#products" class="btn">Ver productos</a>
+        </section>
+
+        <!-- Section 2: Products page -->
+        <section id="products">
+            <h2>Nuestros productos</h2>
+            <ul>
+                <!-- Article for each product -->
+                <article>
+                    <img src="product1.jpg" alt="Product 1">
+                    <h3>Producto 1</h3>
+                    <p>Descripción del producto 1.</p>
+                    <a href="#product-details-1" class="btn">Ver detalles</a>
+                </article>
+
+                <article>
+                    <img src="product2.jpg" alt="Product 2">
+                    <h3>Producto 2</h3>
+                    <p>Descripción del producto 2.</p>
+                    <a href="#product-details-2" class="btn">Ver detalles</a>
+                </article>
+
+               
+            </ul>
+        </section>
+
+      
+        <section id="cart">
+            <h2>Tu carrito de compras</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                    <tr>
+                        <td>Producto 1</td>
+                        <td>2</td>
+                        <td>$10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 2</td>
+                        <td>1</td>
+                        <td>$5.00</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <a href="#" class="btn">Checkout</a>
+        </section>
+    </main>
+
+ 
+    <aside>
+        <h3>Nuestros servicios</h3>
+        <ul>
+            <li><a href="#">Envío gratuito</a></li>
+            <li><a href="#">Devolución fácil</a></li>
+            <li><a href="#">Garantía de satisfacción</a></li>
+        </ul>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <p>Tienda Online | © 2023 Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Product details templates (add more as needed) -->
+    <article id="product-details-1" class="hidden">
+        <h2>Producto 1</h2>
+        <img src="image3n.jpg" alt="Product 1">
+        <p>El blazer nos acompaña en cada temporada y de la mañana a la noche.
+
+            El preppy tiene en el saco deportivo un símbolo. Se puede llevar cruzados, como propone Fendi, o de tres botones, y con pantalones de algodón o jeans. El nuevo dandi lo incorpora a un pantalón recto y no excesivamente ajustado 1.</p>
+        <strong>Precio:</strong> $250.00<br>
+        <button>Add to cart</button>
+    </article>
+
+    <article id="product-details-2" class="hidden">
+        <h2>Producto 2</h2>
+        <img src="descarga5.jfif" alt="Product 2">
+        <p>Disfruta de audio inmersivo con los auriculares inalámbricos Zone Vibe 100. Diseñados para tu forma de trabajar y disfrutar.
+
+            Compatibles con las plataformas de reuniones por video comunes. Audio excepcional para el tiempo de actividad y de inactividad. Fabricados con un 25 % de plástico reciclado posconsumo.</p>
+        <strong>Precio:</strong> $67.00<br>
+        <button>Add to cart</button>
+    </article>
+
+</body>
+</html>

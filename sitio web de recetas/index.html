@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deliciosa Cocina - Tu Sitio Web de Recetas</title>
+    <meta name="description" content="Descubre recetas deliciosas, saludables, vegetarianas y veganas en Deliciosa Cocina. Aprende a cocinar platos increíbles paso a paso.">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="imagen.jpg" alt="Logo de Deliciosa Cocina">
+            <h1>Deliciosa Cocina</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="#recetas"><i class="fas fa-utensils"></i> Recetas</a></li>
+                <li><a href="#blog"><i class="fas fa-blog"></i> Blog</a></li>
+                <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Section 1: Home page -->
+        <section id="inicio">
+            <h1>¡Bienvenidos a Deliciosa Cocina!</h1>
+            <p>Descubre un mundo de sabores y aprende a cocinar platos increíbles.</p>
+            <div class="categorias-recetas">
+                <div class="categoria">
+                    <img src="salud.jpg" alt="Recetas Saludables">
+                    <h3>Recetas Saludables</h3>
+                    <a href="#" class="btn">Ver Recetas</a>
+                </div>
+                <div class="categoria">
+                    <img src="veje.jpg" alt="Recetas Vegetarianas">
+                    <h3>Recetas Vegetarianas</h3>
+                    <a href="#" class="btn">Ver Recetas</a>
+                </div>
+                <div class="categoria">
+                    <img src="vege.jpg" alt="Recetas Veganas">
+                    <h3>Recetas Veganas</h3>
+                    <a href="#" class="btn">Ver Recetas</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Recipe details page -->
+        <section id="receta-detalles" class="hidden">
+            <article>
+                <h2>Ensalada Mediterránea</h2>
+                <img src="descarga (1).jfif" alt="Ensalada Mediterránea">
+                <p>Una deliciosa y fresca ensalada con sabores del Mediterráneo. Perfecta para el verano.</p>
+                <div class="info-receta">
+                    <span><i class="fas fa-clock"></i> Tiempo de preparación: 15 minutos</span>
+                    <span><i class="fas fa-user-friends"></i> Porciones: 4</span>
+                    <span><i class="fas fa-fire"></i> Calorías: 320 por porción</span>
+                </div>
+                <h3>Ingredientes:</h3>
+                <ul>
+                    <li>2 tazas de lechuga romana picada</li>
+                    <li>1 pepino mediano, en rodajas</li>
+                    <li>1 taza de tomates cherry, cortados por la mitad</li>
+                    <li>1/2 taza de aceitunas negras</li>
+                    <li>1/4 de cebolla roja, en rodajas finas</li>
+                    <li>100g de queso feta desmenuzado</li>
+                    <li>2 cucharadas de aceite de oliva extra virgen</li>
+                    <li>1 cucharada de vinagre balsámico</li>
+                    <li>Sal y pimienta al gusto</li>
+                </ul>
+                <h3>Instrucciones:</h3>
+                <ol>
+                    <li>En un tazón grande, mezcla la lechuga, el pepino, los tomates, las aceitunas y la cebolla.</li>
+                    <li>Agrega el queso feta por encima.</li>
+                    <li>En un tazón pequeño, mezcla el aceite de oliva, el vinagre balsámico, sal y pimienta.</li>
+                    <li>Vierte el aderezo sobre la ensalada y mezcla suavemente.</li>
+                    <li>Sirve inmediatamente y disfruta.</li>
+                </ol>
+            </article>
+        </section>
+
+        <!-- Section 3: Blog -->
+        <section id="blog">
+            <h2>Nuestro Blog Culinario</h2>
+            <div class="blog-posts">
+                <article class="blog-post">
+                    <img src="imagen4.jpg" alt="5 Consejos para una Cocina Saludable">
+                    <h3>5 Consejos para una Cocina Saludable</h3>
+                    <p>Descubre cómo hacer que tus comidas sean más nutritivas sin sacrificar el sabor...</p>
+                    <a href="#" class="btn">Leer más</a>
+                </article>
+                <article class="blog-post">
+                    <img src="imagen5.jpg" alt="Los Beneficios de la Dieta Mediterránea">
+                    <h3>Los Beneficios de la Dieta Mediterránea</h3>
+                    <p>Explora por qué la dieta mediterránea es considerada una de las más saludables del mundo...</p>
+                    <a href="#" class="btn">Leer más</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Section 4: Contact page -->
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes alguna pregunta o sugerencia? ¡Nos encantaría saber de ti!</p>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo-electronico">Correo electrónico:</label>
+                <input type="email" id="correo-electronico" name="correo-electronico" required>
+
+                <label for="asunto">Asunto:</label>
+                <select id="asunto" name="asunto">
+                    <option value="pregunta">Pregunta general</option>
+                    <option value="sugerencia">Sugerencia de receta</option>
+                    <option value="problema">Reporte de problema</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Aside -->
+    <aside>
+        <h3>Explora Más</h3>
+        <ul>
+            <li><a href="#"><i class="fas fa-carrot"></i> Recetas saludables</a></li>
+            <li><a href="#"><i class="fas fa-leaf"></i> Recetas vegetarianas</a></li>
+            <li><a href="#"><i class="fas fa-seedling"></i> Recetas veganas</a></li>
+            <li><a href="#"><i class="fas fa-pepper-hot"></i> Recetas picantes</a></li>
+            <li><a href="#"><i class="fas fa-ice-cream"></i> Postres</a></li>
+        </ul>
+        <div class="newsletter">
+            <h4>Suscríbete a nuestro boletín</h4>
+            <p>Recibe las últimas recetas y consejos culinarios directamente en tu bandeja de entrada.</p>
+            <form action="#" method="post">
+                <input type="email" placeholder="Tu correo electrónico" required>
+                <button type="submit">Suscribirse</button>
+            </form>
+        </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Sobre Nosotros</h4>
+                <p>Deliciosa Cocina es tu fuente confiable de recetas deliciosas y consejos culinarios. Nuestra misión es inspirar a las personas a cocinar y comer de manera saludable y sostenible.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos de Uso</a></li>
+                    <li><a href="#">Mapa del Sitio</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Deliciosa Cocina | Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

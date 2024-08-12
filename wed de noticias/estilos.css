@@ -1,0 +1,88 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f7f7f7;
+    color: #333333;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+/* Estilos para el header */
+header {
+    background-color: #2c3e50;
+    padding: 10px 20px;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+/* Estilos para las noticias principales */
+.noticias-principales {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.noticia-principal {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.noticia-principal img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los detalles de las noticias */
+#noticia-detalles article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#noticia-detalles img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el aside */
+aside {
+    width: 300px;
+    padding: 20px;
+    margin-right: 20px;
+    background-color: #2c3e50;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #1abc9c;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,156 @@
+:root {
+    --primary-color: #ff6b6b;
+    --secondary-color: #4ecdc4;
+    --dark-color: #2c3e50;
+    --light-color: #ecf0f1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+.nav-horizontal ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-horizontal li {
+    margin-left: 2rem;
+}
+
+.nav-horizontal a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+.nav-horizontal a:hover {
+    color: var(--secondary-color);
+}
+
+.nav-vertical {
+    width: 250px;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-vertical ul {
+    list-style-type: none;
+}
+
+.nav-vertical li {
+    margin-bottom: 1rem;
+}
+
+.nav-vertical a {
+    color: var(--dark-color);
+    text-decoration: none;
+    font-weight: 300;
+    transition: all 0.3s ease;
+    display: block;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.nav-vertical a:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+main {
+    flex-grow: 1;
+    padding: 2rem;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 2rem;
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.recipe-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-card h3 {
+    padding: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .nav-vertical {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .nav-vertical ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-vertical li {
+        margin-bottom: 0;
+    }
+}

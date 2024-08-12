@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Natural: Belleza Salvaje</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        :root {
+            --primary-color: #00c9a7;
+            --secondary-color: #845ec2;
+            --background-color: #1a1a2e;
+            --text-color: #e0e0e0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: #fff;
+            text-align: center;
+            padding: 3rem 0;
+            margin-bottom: 3rem;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 3rem;
+        }
+
+        .image-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-container:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+        }
+
+        .image-wrapper {
+            width: 100%;
+            height: 0;
+            padding-bottom: 75%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-wrapper img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.1);
+        }
+
+        .image-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: #fff;
+            padding: 1.5rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .image-container:hover .image-caption {
+            transform: translateY(0);
+        }
+
+        .image-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .image-desc {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Galería Natural: Belleza Salvaje</h1>
+        <p>Descubre los secretos más asombrosos de nuestro planeta</p>
+    </header>
+
+    <div class="container">
+        <div class="gallery">
+            <div class="image-container">
+                <div class="image-wrapper">
+                    <img src="imagenes.avif" alt="Montañas majestuosas">
+                </div>
+                <div class="image-caption">
+                    <div class="image-title">Cumbres Eternas</div>
+                    <div class="image-desc">Donde el cielo besa la tierra</div>
+                </div>
+            </div>
+            <div class="image-container">
+                <div class="image-wrapper">
+                    <img src="https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_1280.jpg" alt="Bosque misterioso">
+                </div>
+                <div class="image-caption">
+                    <div class="image-title">Bosque Encantado</div>
+                    <div class="image-desc">Secretos ocultos entre las hojas</div>
+                </div>
+            </div>
+            <div class="image-container">
+                <div class="image-wrapper">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/29/04/19/ocean-1867285_1280.jpg" alt="Océano infinito">
+                </div>
+                <div class="image-caption">
+                    <div class="image-title">Azul Profundo</div>
+                    <div class="image-desc">La inmensidad del mar nos llama</div>
+                </div>
+            </div>
+            <div class="image-container">
+                <div class="image-wrapper">
+                    <img src="imagen.avif" alt="Desierto dorado">
+                </div>
+                <div class="image-caption">
+                    <div class="image-title">Dunas Doradas</div>
+                    <div class="image-desc">Donde el tiempo se detiene</div>
+                </div>
+            </div>
+            <div class="image-container">
+                <div class="image-wrapper">
+                    <img src="https://cdn.pixabay.com/photo/2013/10/02/23/03/mountains-190055_1280.jpg" alt="Cascada majestuosa">
+                </div>
+                <div class="image-caption">
+                    <div class="image-title">Caída Eterna</div>
+                    <div class="image-desc">La fuerza de la naturaleza en movimiento</div>
+                </div>
+            </div>
+            <div class="image-container">
+                <div class="image-wrapper">
+                    <img src="imagenen.avif" alt="Aurora boreal">
+                </div>
+                <div class="image-caption">
+                    <div class="image-title">Luces del Norte</div>
+                    <div class="image-desc">Un espectáculo celestial único</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.tarjeta-presentacion {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-presentacion:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.tarjeta-presentacion img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #3498db;
+    margin-bottom: 20px;
+}
+
+.tarjeta-presentacion h2 {
+    color: #2c3e50;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.tarjeta-presentacion p {
+    color: #7f8c8d;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.padding-largo {
+    padding: 50px;
+}
+
+.border-grande {
+    border: 5px solid #3498db;
+}
+
+.margin-ampliado {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+@media (max-width: 600px) {
+    .tarjeta-presentacion {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .padding-largo {
+        padding: 30px;
+    }
+    
+    .margin-ampliado {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

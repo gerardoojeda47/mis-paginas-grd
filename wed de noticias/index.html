@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio de Noticias</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Section 1: Home page -->
+        <section id="inicio">
+            <h1>Noticias principales</h1>
+            <div class="noticias-principales"></div>
+        </section>
+
+        <!-- Section 2: News details page -->
+        <section id="noticia-detalles" class="hidden">
+            <article>
+                <h2>11 Ago, 2024
+Cartagena está entre las ciudades costeras más populares del mundo</h2>
+                <img src="imagen.jfif" alt="Imagen de la noticia">
+                <p>Los premios buscan promover y apoyar la industria global del turismo a través del reconocimiento a los sectores más destacados en materia de productos y servicios. De esta manera, cada año otorga premios mundiales, nacionales y regionales.</p>
+                <strong>Fuente:</strong><br>
+                <a href="#">Fuente de la noticia</a><br>
+            </article>
+        </section>
+
+        <!-- Section 3: Contact page -->
+        <section id="contacto">
+            <h2>Contactanos</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre"><br>
+                <label for="correo-electronico">Correo electrónico:</label>
+                <input type="email" id="correo-electronico" name="correo-electronico"><br>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Aside (opcional) -->
+    <aside>
+        <h3>Categorías de noticias</h3>
+        <ul>
+           
+        </ul>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <p>Sitio de Noticias | © 2023 Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

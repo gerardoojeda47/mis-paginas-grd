@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Chévere - Restaurante Innovador</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff6b6b;
+            color: white;
+            text-align: center;
+            padding: 2em;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 3em;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        .menu-container {
+            max-width: 1200px;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .category-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 2em;
+        }
+        .category {
+            flex-basis: calc(33.333% - 2em);
+            margin: 1em;
+            padding: 1.5em;
+            background-color: #4ecdc4;
+            border-radius: 10px;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .category h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+            border-bottom: 2px solid white;
+            padding-bottom: 0.5em;
+        }
+        .dish {
+            margin-bottom: 1em;
+        }
+        .dish-name {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .dish-price {
+            float: right;
+            font-style: italic;
+        }
+        .dish-description {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        @media (max-width: 768px) {
+            .category-container {
+                flex-direction: column;
+            }
+            .category {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Menú Chévere</h1>
+    </header>
+    <div class="menu-container">
+        <div class="category-container">
+            <div class="category">
+                <h2>Entradas</h2>
+                <div class="dish">
+                    <span class="dish-name">Ceviche de Mango</span>
+                    <span class="dish-price">$12.000</span>
+                    <p class="dish-description">Fresco ceviche con trozos de mango y camarón</p>
+                </div>
+                <div class="dish">
+                    <span class="dish-name">Empanadas de Yuca</span>
+                    <span class="dish-price">$10.000</span>
+                    <p class="dish-description">Crujientes empanadas de yuca rellenas de queso</p>
+                </div>
+            </div>
+            <div class="category">
+                <h2>Platos Fuertes</h2>
+                <div class="dish">
+                    <span class="dish-name">Lomo al Café</span>
+                    <span class="dish-price">$28.000</span>
+                    <p class="dish-description">Lomo de res en salsa de café colombiano</p>
+                </div>
+                <div class="dish">
+                    <span class="dish-name">Pescado en Hoja de Plátano</span>
+                    <span class="dish-price">$25.000</span>
+                    <p class="dish-description">Pescado fresco cocido en hoja de plátano con especias</p>
+                </div>
+            </div>
+            <div class="category">
+                <h2>Postres</h2>
+                <div class="dish">
+                    <span class="dish-name">Tres Leches de Guanábana</span>
+                    <span class="dish-price">$15.000</span>
+                    <p class="dish-description">Pastel tres leches con crema de guanábana</p>
+                </div>
+                <div class="dish">
+                    <span class="dish-name">Flan de Coconut</span>
+                    <span class="dish-price">$13.000</span>
+                    <p class="dish-description">Suave flan de coco con caramelo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

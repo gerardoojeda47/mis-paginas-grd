@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Profesional - Ana Rodríguez</title>
+    <style>
+        :root {
+            --primary-color: #00ffff;
+            --secondary-color: #333;
+            --text-color: #f0f0f0;
+            --background-color: #1a1a1a;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(45deg, var(--secondary-color), var(--background-color));
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        
+        nav {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin: 0 1rem;
+        }
+        
+        nav ul li a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color: #fff;
+        }
+        
+        main {
+            display: flex;
+            margin: 2rem;
+        }
+        
+        section {
+            flex: 2;
+            margin-right: 2rem;
+        }
+        
+        article {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+        }
+        
+        aside {
+            flex: 1;
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 10px;
+            height: fit-content;
+        }
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        .social-links a {
+            color: var(--primary-color);
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: #fff;
+        }
+        
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+            
+            aside {
+                margin-top: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gerardo Ojeda Riascos</h1>
+        <p>Desarrolladora Full Stack</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#biografia">Biografía</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <article id="biografia">
+                <h2>Biografía</h2>
+                <p>Soy una desarrolladora Full Stack apasionada por crear soluciones tecnológicas innovadoras. Con más de 5 años de experiencia en el sector, me especializo en el desarrollo de aplicaciones web y móviles que combinen funcionalidad y diseño elegante.</p>
+            </article>
+
+            <article id="experiencia">
+                <h2>Experiencia Laboral</h2>
+                <h3>Desarrolladora Senior - TechFuture Inc.</h3>
+                <p>2020 - Presente</p>
+                <ul>
+                    <li>Lideré el desarrollo de una plataforma de e-commerce con más de 1 millón de usuarios activos.</li>
+                    <li>Implementé arquitecturas de microservicios para mejorar la escalabilidad y el rendimiento.</li>
+                </ul>
+
+                <h3>Desarrolladora Full Stack - InnovaSoft</h3>
+                <p>2018 - 2020</p>
+                <ul>
+                    <li>Desarrollé aplicaciones web responsivas utilizando React y Node.js.</li>
+                    <li>Colaboré en la implementación de una API RESTful para un sistema de gestión de proyectos.</li>
+                </ul>
+            </article>
+        </section>
+
+        <aside id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>JavaScript (React, Node.js, Vue.js)</li>
+                <li>Python (Django, Flask)</li>
+                <li>SQL y NoSQL databases</li>
+                <li>DevOps y CI/CD</li>
+                <li>UI/UX Design</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" title="LinkedIn">LinkedIn</a>
+            <a href="#" title="GitHub">GitHub</a>
+            <a href="#" title="Twitter">Twitter</a>
+        </div>
+        <p>&copy; 2024 Ana Rodríguez. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
